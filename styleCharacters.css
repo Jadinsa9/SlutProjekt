@@ -228,7 +228,7 @@ body {
 /*Needs fixing for extensive text!!!*/
 .articleParagraph {
     font-size: 1.25rem;
-    /* margin-left: 2ch; */
+    margin-left: 2ch;
     text-overflow: clip;
     width: 80%;
     /* margin-right: 2ch; */

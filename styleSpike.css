@@ -160,7 +160,7 @@ body {
 .content-column {
     position: relative;
     width: 600px;
-    /* overflow-y: overlay; */
+    overflow-y: overlay;
     max-width: 100vw;
     min-height: calc(100vh - 70px);
     padding: 20px;
@@ -201,6 +201,8 @@ body {
     background-color: rgb(177, 98, 68);
 }
 
+/* här håller jag titeln för artikeln */
+
 .articleTitleDiv {
     display: flex;
     width: 95%;
@@ -208,14 +210,17 @@ body {
     background-color: rgb(255, 207, 156);
 }
 
+/* här är attributer för själva texten */
+
 .articleTitle {
     display: flex;
     height: 100%;
     width: 100%;
     align-items: center;
     margin-left: 2ch;
-    text-decoration: none;
 }
+
+/* kontainer för bröd text */
 
 .articleContentDiv {
     display: flex;
@@ -225,10 +230,10 @@ body {
     background-color: rgb(88, 26, 41);
 }
 
-/*Needs fixing for extensive text!!!*/
+/* själva textens attributer */
 .articleParagraph {
     font-size: 1.25rem;
-    /* margin-left: 2ch; */
+    margin-left: 2ch;
     text-overflow: clip;
     width: 80%;
     /* margin-right: 2ch; */
