@@ -145,13 +145,13 @@ body {
     margin-top: 70px;
 }
 
-/*Attributer till backgrundsbilden*/
+/*Attributer till backgrundsbilden och själva bilden*/
 .background-image {
     position: fixed;
     top: 70px;
     width: 100%;
     height: calc(100vh - 70px);
-    background: url(cowboy-bebop-background.jpg) no-repeat center center;
+    background: url(../Images/cowboy-bebop-background.jpg) no-repeat center center;
     background-size: cover;
     background-position: right 0px top;
     z-index: -1;
@@ -284,37 +284,6 @@ body {
 
 .articleReadMore :hover {
     color: rgb(255, 207, 156);
-}
-
-/*kod för om du använder en telefon för att titta på min webbplats*/
-@media (max-width: 600px) {
-    .nav-links{
-        display: none;
-        position: fixed;
-        top: 70px;
-        left: 0;
-        right: 0;
-        background-color: rgba(255, 255, 255, 0.95);
-        padding: 1rem,;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .nav-links.active {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .toggle {
-        display: block;
-    }
-
-    .content-column {
-        width: 100%;
-        padding: 20px;
-    }
 }
 
 /* a .article, a:visited .article, a:link .article, a:active .article * {

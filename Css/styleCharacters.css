@@ -150,7 +150,7 @@ body {
     top: 70px;
     width: 100%;
     height: calc(100vh - 70px);
-    background: url(cowboy-bebop-background.jpg) no-repeat center center;
+    background: url(../Images/cowboy-bebop-background.jpg) no-repeat center center;
     background-size: cover;
     background-position: right 0px top;
     z-index: -1;
@@ -201,8 +201,6 @@ body {
     background-color: rgb(177, 98, 68);
 }
 
-/* här håller jag titeln för artikeln */
-
 .articleTitleDiv {
     display: flex;
     width: 95%;
@@ -210,17 +208,14 @@ body {
     background-color: rgb(255, 207, 156);
 }
 
-/* här är attributer för själva texten */
-
 .articleTitle {
     display: flex;
     height: 100%;
     width: 100%;
     align-items: center;
     margin-left: 2ch;
+    text-decoration: none;
 }
-
-/* kontainer för bröd text */
 
 .articleContentDiv {
     display: flex;
@@ -230,7 +225,7 @@ body {
     background-color: rgb(88, 26, 41);
 }
 
-/* själva textens attributer */
+/*Needs fixing for extensive text!!!*/
 .articleParagraph {
     font-size: 1.25rem;
     margin-left: 2ch;
@@ -255,37 +250,6 @@ body {
     display: flex;
     justify-content: center;
     overflow-y: hidden;
-}
-
-/*kod för om du använder en telefon för att titta på min webbplats*/
-@media (max-width: 600px) {
-    .nav-links{
-        display: none;
-        position: fixed;
-        top: 70px;
-        left: 0;
-        right: 0;
-        background-color: rgba(255, 255, 255, 0.95);
-        padding: 1rem,;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .nav-links.active {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .toggle {
-        display: block;
-    }
-
-    .content-column {
-        width: 100%;
-        padding: 20px;
-    }
 }
 
 /* a .article, a:visited .article, a:link .article, a:active .article * {
